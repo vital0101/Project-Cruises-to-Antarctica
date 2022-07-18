@@ -775,6 +775,23 @@ button,
   pointer-events: auto;
 }
 
+.page-header {
+  min-height: 650px;
+  background-image: url("../img/content/intro-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main-nav__btn-menu {
+  display: none;
+}
+
+.site-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
