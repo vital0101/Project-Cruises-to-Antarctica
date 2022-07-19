@@ -1,4 +1,4 @@
-.site-nav {
+.navigation {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -6,13 +6,9 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-
-  @media (max-width: $vp-768) {
-    display: none;
-  }
 }
 
-.site-nav__item {
+.navigation__item {
   margin-right: 33px;
 
   @media (max-width: $vp-1024) {
@@ -20,11 +16,11 @@
   }
 }
 
-.site-nav__item:last-child {
+.navigation__item:last-child {
   margin-right: 0;
 }
 
-.site-nav__item a {
+.navigation__item a {
   padding: 15px 0;
   font-weight: 500;
   color: $color-alice-blue;

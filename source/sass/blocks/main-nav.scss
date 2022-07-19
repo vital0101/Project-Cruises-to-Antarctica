@@ -6,3 +6,9 @@
 .main-nav__btn-menu {
   display: none;
 }
+
+.main-nav__site-nav {
+  @media (max-width: $vp-768) {
+    display: none;
+  }
+}
