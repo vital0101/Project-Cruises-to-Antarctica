@@ -436,7 +436,7 @@ html {
   font-size: 16px;
   line-height: 24px;
   font-family: "Montserrat", "Arial", sans-serif;
-  color: #000000;
+  color: #011c40;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -775,11 +775,45 @@ button,
   pointer-events: auto;
 }
 
+.page-body {
+  margin: 0 auto;
+  max-width: 1366px;
+}
+
 .page-header {
+  padding: 35px 0;
+}
+
+.hero-header-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   min-height: 650px;
   background-image: url("../img/content/intro-desktop.jpg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.page-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.main-nav__logo {
+  margin-right: 50px;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
 }
 
 .main-nav__btn-menu {
@@ -790,6 +824,50 @@ button,
   margin: 0;
   padding: 0;
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.site-nav__item {
+  margin-right: 33px;
+}
+
+.site-nav__item:last-child {
+  margin-right: 0;
+}
+
+.site-nav__item a {
+  padding: 15px 0;
+  font-weight: 500;
+  color: #f9fbfd;
+}
+
+.hero {
+  margin-top: auto;
+  padding-left: 95px;
+  padding-bottom: 280px;
+  color: #f9fbfd;
+}
+
+.hero h2 {
+  margin: 0;
+  margin-bottom: 12px;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 66px;
+  color: inherit;
+}
+
+.hero p {
+  margin: 0;
+  font-size: 20px;
+  color: inherit;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
@@ -808,19 +886,53 @@ button,
 
 @media (max-width: 1439px) {
   .container {
-    padding: 0 32px;
+    padding: 0 103px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .page-body {
+    max-width: 1024px;
+  }
+
+  .site-nav__item {
+    margin-right: 23px;
+  }
+
+  .site-nav__item a {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .hero {
+    padding-left: 0;
   }
 }
 
 @media (max-width: 1023px) {
   .container {
-    padding: 0 24px;
+    padding: 0 45px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-body {
+    max-width: 768px;
+  }
+
+  .site-nav {
+    display: none;
+  }
+
+  .hero h2 {
+    font-size: 36px;
+    line-height: 45px;
   }
 }
 
 @media (max-width: 767px) {
   .container {
-    padding: 0 16px;
+    padding: 0 15px;
   }
 
   .modal__wrapper {
