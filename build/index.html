@@ -9,23 +9,52 @@
     <link rel="preload" href="fonts/montserrat.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
-  <body>
+  <body class="page-body">
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
-      </header>
-      <main>
-        <section class="intro">
+      <div class="hero-header-wrapper  container">
+        <header class="header page-header">
+          <div class="page-header__wrapper">
+            <nav class="page-nav main-nav">
+              <div class="main-nav__logo">
+                <!-- Добавить класс logo--theme-light для меню на mobile -->
+                <a>
+                  <img src="./img/svg/sprite/logo.svg" alt="логотип." width="70" height="38">
+                </a>
+                </div>
+                <div class="main-nav__site-nav">
+                  <ul class="site-nav">
+                    <li class="site-nav__item">
+                      <a class="site-nav__link" href="#">Преимущества </a>
+                    </li>
+                    <li class="site-nav__item">
+                      <a class="site-nav__link" href="#">Направления</a>
+                    </li>
+                    <li class="site-nav__item">
+                      <a class="site-nav__link" href="#">Ближайшие круизы</a>
+                    </li>
+                    <li class="site-nav__item">
+                      <a class="site-nav__link" href="#">Контакты</a>
+                    </li>
+                  </ul>
+                </div>
+                <button class="main-nav__btn-menu" type="button" aria-label="Открыть/закрыть меню.">
+                </button>
+            </nav>
+          </div>
+        </header>
+        <section class="hero">
+          <h2>Круизы в Антарктику </h2>
+          <p>Волшебный мир айсбергов и пингвинов</p>
+        </section>
+      </div>
+      <main class="page-main main">
+        <section class="">
           <div class="container">
-            <h1>rait Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудте удалить всё содержимоеs.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+
           </div>
         </section>
       </main>
-      <footer>
+      <footer class="page-footer footer">
         <div class="container"></div>
       </footer>
     </div>

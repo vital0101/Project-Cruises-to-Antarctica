@@ -1,0 +1,30 @@
+.hero {
+  margin-top: auto;
+  padding-left: 95px;
+  padding-bottom: 280px;
+  color: $color-alice-blue;
+
+  @media (max-width: $vp-1024) {
+    padding-left: 0;
+  }
+}
+
+.hero h2 {
+  margin: 0;
+  margin-bottom: 12px;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 66px;
+  color: inherit;
+
+  @media (max-width: $vp-768) {
+    font-size: 36px;
+    line-height: 45px;
+  }
+}
+
+.hero p {
+  margin: 0;
+  font-size: 20px;
+  color: inherit;
+}
