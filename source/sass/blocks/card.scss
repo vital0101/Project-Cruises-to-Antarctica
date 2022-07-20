@@ -1,0 +1,84 @@
+.card {
+  position: relative;
+  width: 260px;
+  min-height: 386px;
+  perspective: 1000px;
+}
+
+.card__front,
+.card__back {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: 1s;
+  backface-visibility: hidden;
+}
+
+.card:hover .card__front {
+  transform: rotateY(180deg);
+}
+
+.card:hover .card__back {
+  transform: rotateY(360deg);
+}
+
+.card__back {
+  transform: rotateY(180deg);
+}
+
+.card__front h2 {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: $color-alice-blue;
+}
+
+.card__back h3 {
+  margin: 0;
+  // margin-bottom: 14px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: $color-alice-blue;
+}
+
+.card__back {
+  height: 386px;
+  padding: 35px 25px;
+  background-color: $color-tangaroa;
+}
+
+.card__back h4 {
+  margin: 0;
+  // margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: $color-alice-blue;
+}
+
+.card__back p {
+  margin: 0;
+  // margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-alice-blue;
+}
+
+.card__back a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  width: 210px;
+  min-height: 40px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  background-color: $color-alice-blue;
+}

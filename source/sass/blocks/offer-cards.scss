@@ -1,0 +1,26 @@
+.offer-cards h2 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 42px;
+  text-align: center;
+}
+
+.offer-cards__wrapper {
+  margin: 0 auto;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.offer-cards__list {
+  margin: 0;
+  padding: 0, 15px;
+  list-style: none;
+
+  display: grid;
+  grid-template-columns: repeat(4, 260px);
+  gap: 30px;
+
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+}
