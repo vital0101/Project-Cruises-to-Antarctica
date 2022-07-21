@@ -22,15 +22,6 @@
   }
 }
 
-.page-footer__social {
-  display: flex;
-
-  @media (max-width: $vp-768) {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
 .page-footer__logo {
   margin-right: 40px;
   width: 70px;
@@ -42,6 +33,7 @@
   }
 
   @media (max-width: $vp-768) {
+    margin-bottom: 30px;
     width: 42px;
     height: 22px;
   }

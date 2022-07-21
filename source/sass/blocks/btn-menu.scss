@@ -1,0 +1,25 @@
+.btn-menu {
+  display: none;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  cursor: pointer;
+
+
+  &::before {
+    content: "";
+    width: 24px;
+    height: 2px;
+    border: none;
+    background-color: $color-alice-blue;
+    box-shadow: 0 7px 0 0 $color-alice-blue,
+      0 -7px 0 0 $color-alice-blue;
+  }
+
+  @media (max-width: $vp-768) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
