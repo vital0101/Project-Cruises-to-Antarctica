@@ -1,14 +1,16 @@
-.offer-cards h2 {
-  font-size: 28px;
-  font-weight: 600;
-  line-height: 42px;
-  text-align: center;
-}
-
 .offer-cards__wrapper {
   margin: 0 auto;
   padding-top: 120px;
   padding-bottom: 120px;
+}
+
+.offer-cards h2 {
+  margin: 0;
+  margin-bottom: 60px;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 42px;
+  text-align: center;
 }
 
 .offer-cards__list {
