@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
 
-  @media (max-width: $vp-767) {
+  @media (max-width: $vp-768) {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -16,7 +16,7 @@
 .page-footer__nav {
   margin-right: auto;
 
-  @media (max-width: $vp-767) {
+  @media (max-width: $vp-768) {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -25,7 +25,7 @@
 .page-footer__social {
   display: flex;
 
-  @media (max-width: $vp-767) {
+  @media (max-width: $vp-768) {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -41,7 +41,7 @@
     height: 20px;
   }
 
-  @media (max-width: $vp-767) {
+  @media (max-width: $vp-768) {
     width: 42px;
     height: 22px;
   }
