@@ -4,7 +4,16 @@
 
   min-height: 650px;
   background-color: $color-tangaroa;
-  background-image: url("../img/content/intro-desktop.jpg");
+  // background-image: url("../img/content/intro-desktop.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: cover;
+
+  @media (max-width: $vp-1024) {
+  // background-image: url("../img/content/intro-tablet.jpg");
+  }
+
+  @media (max-width: $vp-768) {
+    // background-image: url("../../img/content/intro-mobile.jpg");
+    background-position: center;
+  }
 }

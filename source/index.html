@@ -11,17 +11,16 @@
   </head>
   <body class="page-body">
     <div class="wrapper">
-      <div class="hero-header-wrapper  container">
-        <header class="header page-header">
-          <div class="page-header__wrapper">
-            <nav class="page-header__nav main-nav">
-              <div class="main-nav__logo">
+      <div class="hero-header-wrapper container">
+        <header class="page-header header">
+            <nav class="page-header__nav">
+              <div class="page-header__logo">
                 <!-- Добавить класс logo--theme-light для меню на mobile -->
                 <a>
                   <img src="./img/svg/sprite/logo.svg" alt="логотип." width="70" height="38">
                 </a>
               </div>
-              <div class="main-nav__site-nav">
+              <div class="page-header__site-nav">
                 <ul class="navigation">
                   <li class="navigation__item">
                     <a href="#">Преимущества </a>
@@ -40,14 +39,13 @@
               <button class="main-nav__btn-menu" type="button" aria-label="Открыть/закрыть меню.">
               </button>
             </nav>
-          </div>
         </header>
         <section class="hero">
           <h2>Круизы в Антарктику </h2>
           <p>Волшебный мир айсбергов и пингвинов</p>
         </section>
       </div>
-      <main class="page-main main">
+      <!-- <main class="page-main main">
         <section class="promo">
           <div class="promo__wrapper container">
             <div class="promo__text-wrapper">
@@ -276,7 +274,7 @@
             </div>
           </div>
         </section>
-      </main>
+      </main> -->
       <footer class="page-footer footer">
         <div class="page-footer__wrapper container">
           <div class="page-footer__logo">
@@ -284,37 +282,41 @@
               <img src="./img/svg/sprite/logo.svg" alt="логотип." width="70" height="38">
             </a>
           </div>
-          <ul class="page-footer__nav navigation">
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Преимущества </a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Направления</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Ближайшие круизы</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Контакты</a>
-            </li>
-          </ul>
-          <ul class="page-footer__social social">
-            <li class="social__item">
-              <a href="#" aria-label="Мы в фейсбуке.">
-                <img src="./img/svg/sprite/fb.svg" alt="логотип." width="11" height="20">
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="#" aria-label="Мы в инстаграмме.">
-                <img src="./img/svg/sprite/instagram.svg" alt="логотип." width="21" height="20">
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="#" aria-label="Мы в твиттере.">
-                <img src="./img/svg/sprite/twitter.svg" alt="логотип." width="20" height="17">
-              </a>
-            </li>
-          </ul>
+          <div class="page-footer__nav">
+            <ul class="navigation">
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Преимущества </a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Направления</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Ближайшие круизы</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__social">
+            <ul class="social">
+              <li class="social__item">
+                <a href="#" aria-label="Мы в фейсбуке.">
+                  <img src="./img/svg/sprite/fb.svg" alt="логотип." width="11" height="20">
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" aria-label="Мы в инстаграмме.">
+                  <img src="./img/svg/sprite/instagram.svg" alt="логотип." width="21" height="20">
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" aria-label="Мы в твиттере.">
+                  <img src="./img/svg/sprite/twitter.svg" alt="логотип." width="20" height="17">
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </footer>
     </div>
