@@ -1,0 +1,17 @@
+.booking {
+  padding: 50px 0;
+  min-height: 555px;
+  background-image: url("../../img/content/booking-bg-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.booking__wrapper {
+  display: grid;
+  grid-template-columns: 500px 500px;
+}
+
+.booking-wrapper__form {
+  display: flex;
+  flex-direction: column;
+}

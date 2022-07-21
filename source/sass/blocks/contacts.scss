@@ -1,3 +1,7 @@
+.contacts {
+  padding: 120px 0;
+}
+
 .contacts__wrapper-map-static {
   display: none;
 }
@@ -6,7 +10,6 @@
   display: grid;
   grid-template-columns: 560px 500px;
   column-gap: 100px;
-  padding: 120px 0;
 }
 
 .contacts__wrapper-text {
