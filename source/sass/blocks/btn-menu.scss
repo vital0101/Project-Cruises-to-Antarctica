@@ -4,6 +4,7 @@
   width: 24px;
   height: 24px;
   background-color: transparent;
+  border: none;
   cursor: pointer;
 
 
@@ -17,7 +18,7 @@
       0 -7px 0 0 $color-alice-blue;
   }
 
-  @media (max-width: $vp-768) {
+  @media (max-width: $vp-767) {
     display: flex;
     justify-content: center;
     align-items: center;

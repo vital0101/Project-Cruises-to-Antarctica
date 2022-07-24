@@ -1,4 +1,4 @@
-.social ul {
+.social {
   display: flex;
   margin: 0;
   padding: 0;
@@ -11,20 +11,17 @@
   }
 }
 
-.social ul li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20px;
-  height: 20px;
-
-  @media (max-width: $vp-1024) {
+.social__item {
+  @media (max-width: $vp-768) {
     width: 16px;
     height: 16px;
   }
-
-  @media (max-width: $vp-768) {
-  }
 }
-.social li:last-child {
+
+.social__item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
 }

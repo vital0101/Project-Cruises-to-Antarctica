@@ -4,8 +4,12 @@
   padding-bottom: 280px;
   color: $color-alice-blue;
 
-  @media (max-width: $vp-1024) {
+  @media (max-width: $vp-1023) {
     padding-left: 0;
+  }
+
+  @media (max-width: $vp-767) {
+    padding-bottom: 177px;
   }
 }
 
@@ -17,7 +21,7 @@
   line-height: 66px;
   color: inherit;
 
-  @media (max-width: $vp-768) {
+  @media (max-width: $vp-375) {
     font-size: 36px;
     line-height: 45px;
   }
@@ -27,4 +31,9 @@
   margin: 0;
   font-size: 20px;
   color: inherit;
+
+  @media (max-width: $vp-375) {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }

@@ -1,0 +1,6 @@
+.logo a svg {
+  @media (max-width: $vp-1023) {
+    width: 38px;
+    height: 20px;
+  }
+}

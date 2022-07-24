@@ -1,12 +1,4 @@
 .page-body {
   margin: 0 auto;
   max-width: 1366px;
-
-  @media (max-width: $vp-1024) {
-    max-width: 1024px;
-  }
-
-  @media (max-width: $vp-768) {
-    max-width: 768px;
-  }
 }

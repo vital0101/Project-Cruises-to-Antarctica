@@ -1,18 +1,31 @@
 .form {
   display: flex;
   flex-direction: column;
-  padding: 50px;
+  padding: 45px 50px;
   width: 403px;
+  min-height: 455px;
   background-color: $color-tangaroa;
+
+  @media (max-width: $vp-767) {
+    padding: 40px 30px;
+    width: 290px;
+  }
 }
 
 .form p {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 26px;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
   color: $color-alice-blue;
+
+  @media (max-width: $vp-767) {
+    margin-bottom: 35px;
+    align-self: center;
+    text-align: center;
+    width: 197px;
+  }
 }
 
 .form label {
@@ -46,14 +59,19 @@
     height: 18px;
     vertical-align: middle;
     background-color: $color-alice-blue;
+
+    @media (max-width: $vp-767) {
+      width: 20px;
+      height: 20px;
+    }
   }
 }
 
 .form input[type="checkbox"]:checked + label::before {
-    background-image: url("../../img/svg/checkbox.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+  background-image: url("../img/checkbox.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 .form button {
   display: flex;
@@ -62,7 +80,9 @@
   margin-top: 30px;
   padding: 0;
   min-height: 43px;
+  font-size: 14px;
   font-weight: 600;
   line-height: 21px;
   border: none;
+  cursor: pointer;
 }
