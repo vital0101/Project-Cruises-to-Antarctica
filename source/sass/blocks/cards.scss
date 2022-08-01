@@ -19,7 +19,6 @@
 }
 
 .cards__item {
-  position: relative;
   width: 260px;
   overflow: hidden;
 
@@ -32,14 +31,23 @@
   }
 }
 
+.cards__item-wrapper {
+  position: relative;
+
+  @media (max-width: $vp-767) {
+    width: 270px;
+    min-height: 386px;
+  }
+}
+
 .cards__back {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
   transform: translateX(-100%);
   transition: 0.5s;
-  height: 100%;
   padding: 30px 25px;
   background-color: $color-tangaroa;
 }
@@ -56,10 +64,11 @@
 
   @media (max-width: $vp-767) {
     width: 270px;
+    height: 386px;
   }
 }
 
-.cards__front h2 {
+.cards__front h3 {
   position: absolute;
   bottom: 21px;
   left: 30px;
@@ -68,6 +77,11 @@
   font-weight: 500;
   line-height: 27px;
   color: $color-alice-blue;
+
+  @media (max-width: $vp-767) {
+    bottom: 17px;
+    left: 25px;
+  }
 }
 
 .cards__back h3 {

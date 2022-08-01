@@ -3,6 +3,7 @@
   padding-left: 95px;
   padding-bottom: 280px;
   color: $color-alice-blue;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 
   @media (max-width: $vp-1023) {
     padding-left: 0;
@@ -21,7 +22,12 @@
   line-height: 66px;
   color: inherit;
 
-  @media (max-width: $vp-375) {
+  @media (max-width: $vp-1023) {
+    font-size: 50px;
+    line-height: 61px;
+  }
+
+  @media (max-width: $vp-767) {
     font-size: 36px;
     line-height: 45px;
   }
@@ -32,7 +38,12 @@
   font-size: 20px;
   color: inherit;
 
-  @media (max-width: $vp-375) {
+  @media (max-width: $vp-1023) {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  @media (max-width: $vp-767) {
     font-size: 16px;
     line-height: 22px;
   }

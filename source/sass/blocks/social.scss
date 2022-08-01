@@ -9,19 +9,23 @@
   @media (max-width: $vp-1024) {
     min-width: 87px;
   }
-}
 
-.social__item {
-  @media (max-width: $vp-768) {
-    width: 16px;
-    height: 16px;
+  @media (max-width: $vp-767) {
+    margin-top: 30px;
   }
 }
 
 .social__item a {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  width: 38px;
-  height: 38px;
+}
+
+.social__item svg {
+  fill: #f9fbfd;
+  height: 20px;
+}
+
+.social__item:hover a svg {
+  fill: $color-torch-red;
 }

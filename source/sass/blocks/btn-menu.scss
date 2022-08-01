@@ -1,26 +1,51 @@
 .btn-menu {
-  display: none;
-  padding: 0;
-  width: 24px;
-  height: 24px;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-
-
-  &::before {
-    content: "";
-    width: 24px;
-    height: 2px;
-    border: none;
-    background-color: $color-alice-blue;
-    box-shadow: 0 7px 0 0 $color-alice-blue,
-      0 -7px 0 0 $color-alice-blue;
+  @media (max-width: $vp-767) {
+    display: none;
   }
+}
+
+.btn-menu__js {
+  display: none;
 
   @media (max-width: $vp-767) {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0;
+    width: 24px;
+    height: 14px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &--opened::before {
+      content: "";
+      width: 24px;
+      height: 2px;
+      background-color: $color-alice-blue;
+      box-shadow: 0 -6px 0 0 $color-alice-blue, 0 6px 0 0 $color-alice-blue;
+    }
+
+    &--closed::before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      right: 19px;
+      width: 13px;
+      height: 2px;
+      background-color: $color-tangaroa;
+      transform: rotate(45deg);
+    }
+
+    &--closed::after {
+      content: "";
+      position: absolute;
+      top: 5px;
+      right: 19px;
+      width: 13px;
+      height: 2px;
+      background-color: $color-tangaroa;
+      transform: rotate(-45deg);
+    }
   }
 }

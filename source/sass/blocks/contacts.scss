@@ -1,24 +1,67 @@
 .contacts {
-  padding: 116px 0;
-}
-
-.contacts__wrapper-map-no-js {
   display: none;
-}
+  padding-top: 116px;
+  padding-bottom: 124px;
 
-.contacts__wrapper {
-  display: grid;
-  grid-template-columns: 560px 500px;
-  column-gap: 100px;
-
-  @media (max-width: $vp767) {
-    display: flex;
-    flex-direction: column;
+  @media (max-width: $vp-767) {
+    padding-top: 65px;
+    padding-bottom: 65px;
   }
 }
 
+.contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $vp-1023) {
+    grid-template-columns: 324px 324px;
+    column-gap: 30px;
+  }
+
+  @media (max-width: $vp-767) {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 290px;
+  }
+}
+
+.contacts__wrapper-map-no-js {
+  display: block;
+  margin-right: 10px;
+  width: 560px;
+  height: 306px;
+
+
+  @media (max-width: $vp-1023) {
+    width: 324px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 100%;
+  }
+}
+
+.contacts__wrapper-map-no-js img {
+  width: 560px;
+  height: 306px;
+  object-fit: cover;
+}
+
+.contacts__map-interactive {
+  width: 560px;
+  height: 306px;
+}
+
 .contacts__wrapper-text {
-  padding-top: 78px;
+  max-width: 500px;
+  align-self: center;
+
+  @media (max-width: $vp-767) {
+    margin-bottom: 40px;
+    padding-top: 0;
+    order: -1;
+  }
 }
 
 .contacts__wrapper-text p {
@@ -27,6 +70,10 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
+
+  @media (max-width: $vp-767) {
+    margin-bottom: 40px;
+  }
 }
 
 .contacts__wrapper-text address {
@@ -42,14 +89,17 @@
     left: 2px;
     width: 18px;
     height: 22px;
-    background-image: url("../img/svg/sprite/map-marker.svg");
+    background-image: url("../../img/map-marker.svg");
+  }
+
+  @media (max-width: $vp-767) {
+    margin-bottom: 33px;
   }
 }
 
 .contacts__wrapper-text a {
   display: block;
   position: relative;
-  margin-bottom: 30px;
   padding-left: 28px;
 
   &::before {
@@ -59,6 +109,6 @@
     left: 2px;
     width: 18px;
     height: 22px;
-    background-image: url("../img/svg/phone.svg");
+    background-image: url("../../img/phone.svg");
   }
 }

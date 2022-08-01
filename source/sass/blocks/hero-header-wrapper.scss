@@ -2,16 +2,29 @@
   min-height: 650px;
   background-color: $color-tangaroa;
   background-image: url("../img/content/intro-desktop.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/content/intro-desktop@2x.jpg");
+  }
+
   background-repeat: no-repeat;
   background-size: cover;
 
   @media (max-width: $vp-1023) {
     min-height: 638px;
     background-image: url("../img/content/intro-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/content/intro-tablet@2x.jpg");
+    }
   }
 
-  @media (max-width: $vp-767) {
+  @media (max-width: $vp-320) {
     min-height: 500px;
     background-image: url("../img/content/intro-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/content/intro-mobile@2x.jpg");
+    }
   }
 }
