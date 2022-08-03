@@ -11,15 +11,6 @@
     padding: 20px 0;
     margin-bottom: 77px;
   }
-
-  &--bg {
-    @media (max-width: $vp-767) {
-      background-color: $color-alice-blue;
-      width: 100vw;
-      transform: translateX(-15px);
-      padding-left: 15px;
-    }
-  }
 }
 
 .page-header__logo {
@@ -46,12 +37,12 @@
 .page-header__site-nav-js {
   @media (max-width: $vp-767) {
     position: absolute;
-    top: 48px;
-    left: -15px;
+    top: -20px;
+    left: 20px;
     background-color: $color-alice-blue;
     width: 100vw;
-    padding-left: 15px;
-    padding-bottom: 30px;
+    padding-top: 85px;
+    padding-left: 25px;
     display: none;
 
     &--active {

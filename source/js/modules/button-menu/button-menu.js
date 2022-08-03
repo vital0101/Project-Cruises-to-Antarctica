@@ -1,6 +1,5 @@
 const btnMenu = document.querySelector('.page-header__btn-menu');
 const logo = document.querySelector('.logo');
-const pageHeader = document.querySelector('.page-header');
 const headerNav = document.querySelector('.header-navigation');
 const headerNavItem = headerNav.children;
 const siteNav = document.querySelector('.page-header__site-nav');
@@ -31,8 +30,14 @@ const swithBtn = () => {
   btnMenu.addEventListener('click', function () {
     btnMenu.classList.toggle('btn-menu__js--opened');
     btnMenu.classList.toggle('btn-menu__js--closed');
-    logo.classList.toggle('logo-js');
-    pageHeader.classList.toggle('page-header--bg');
+    logo.classList.toggle('logo--js');
+    siteNav.classList.toggle('page-header__site-nav-js--active');
+    addNewClass();
+  });
+  btnMenu.removeEventListener('click', function () {
+    btnMenu.classList.toggle('btn-menu__js--opened');
+    btnMenu.classList.toggle('btn-menu__js--closed');
+    logo.classList.toggle('logo--js');
     siteNav.classList.toggle('page-header__site-nav-js--active');
     addNewClass();
   });

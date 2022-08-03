@@ -649,6 +649,7 @@ button,
   min-height: 650px;
   background-color: #011c40;
   background-image: url("../img/content/intro-desktop.jpg");
+  overflow-x: hidden;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -683,6 +684,12 @@ button,
   width: 70px;
   height: 38px;
   fill: #f9fbfd;
+}
+
+.logo--js {
+  position: relative;
+  margin-left: 35px;
+  z-index: 1;
 }
 
 .page-nav {
@@ -765,7 +772,7 @@ button,
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.hero h2 {
+.hero h1 {
   margin: 0;
   margin-bottom: 12px;
   font-size: 54px;
@@ -1439,7 +1446,7 @@ button,
     padding-left: 0;
   }
 
-  .hero h2 {
+  .hero h1 {
     font-size: 50px;
     line-height: 61px;
   }
@@ -1613,15 +1620,6 @@ button,
     margin-bottom: 77px;
   }
 
-  .page-header--bg {
-    background-color: #f9fbfd;
-    width: 100vw;
-    -webkit-transform: translateX(-15px);
-    -ms-transform: translateX(-15px);
-    transform: translateX(-15px);
-    padding-left: 15px;
-  }
-
   .page-header__nav {
     position: relative;
     -webkit-box-orient: vertical;
@@ -1636,12 +1634,12 @@ button,
 
   .page-header__site-nav-js {
     position: absolute;
-    top: 48px;
-    left: -15px;
+    top: -20px;
+    left: 20px;
     background-color: #f9fbfd;
     width: 100vw;
-    padding-left: 15px;
-    padding-bottom: 30px;
+    padding-top: 85px;
+    padding-left: 25px;
     display: none;
   }
 
@@ -1661,7 +1659,7 @@ button,
     height: 22px;
   }
 
-  .logo-js a svg {
+  .logo--js a svg {
     width: 42px;
     height: 22px;
     fill: #011c40;
@@ -1688,7 +1686,7 @@ button,
   }
 
   .header-navigation__item-js {
-    margin-bottom: 20px;
+    margin-bottom: 26px;
     color: #011c40;
   }
 
@@ -1734,8 +1732,8 @@ button,
     content: "";
     position: absolute;
     top: 5px;
-    right: 19px;
-    width: 13px;
+    right: -2px;
+    width: 16px;
     height: 2px;
     background-color: #011c40;
     -webkit-transform: rotate(45deg);
@@ -1747,8 +1745,8 @@ button,
     content: "";
     position: absolute;
     top: 5px;
-    right: 19px;
-    width: 13px;
+    right: -2px;
+    width: 16px;
     height: 2px;
     background-color: #011c40;
     -webkit-transform: rotate(-45deg);
@@ -1760,7 +1758,7 @@ button,
     padding-bottom: 177px;
   }
 
-  .hero h2 {
+  .hero h1 {
     font-size: 36px;
     line-height: 45px;
   }

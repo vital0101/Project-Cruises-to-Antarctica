@@ -2,6 +2,7 @@
   min-height: 650px;
   background-color: $color-tangaroa;
   background-image: url("../img/content/intro-desktop.jpg");
+  overflow-x: hidden;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/content/intro-desktop@2x.jpg");
