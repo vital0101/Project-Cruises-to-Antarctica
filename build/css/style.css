@@ -641,7 +641,7 @@ button,
 
 .page-body {
   margin: 0 auto;
-  max-width: 1366px;
+  max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -762,7 +762,7 @@ button,
   padding-left: 95px;
   padding-bottom: 280px;
   color: #f9fbfd;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .hero h2 {
@@ -873,7 +873,6 @@ button,
   padding: 30px 30px;
   width: 360px;
   background-color: #f9fbfd;
-  border: 1px solid red;
 }
 
 .features__wrapper-img {
@@ -886,7 +885,6 @@ button,
   margin-bottom: 18px;
   width: 42px;
   height: 32px;
-  border: 1px solid red;
 }
 
 .features__wrapper-img--ship {
@@ -966,7 +964,6 @@ button,
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  height: 100%;
   padding: 30px 25px;
   background-color: #011c40;
 }
@@ -1180,7 +1177,6 @@ button,
 }
 
 .contacts {
-  display: none;
   padding-top: 116px;
   padding-bottom: 124px;
 }
@@ -1194,33 +1190,36 @@ button,
   justify-content: space-between;
 }
 
-.contacts__wrapper-map-no-js {
-  display: block;
+.contacts__map {
   margin-right: 10px;
   width: 560px;
   height: 306px;
 }
 
-.contacts__wrapper-map-no-js img {
+.contacts__map--hidden {
+  display: none;
+}
+
+.contacts__map img {
   width: 560px;
   height: 306px;
   -o-object-fit: cover;
   object-fit: cover;
 }
 
-.contacts__map-interactive {
+.contacts__map-js {
   width: 560px;
   height: 306px;
 }
 
-.contacts__wrapper-text {
+.contacts__text {
   max-width: 500px;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
 }
 
-.contacts__wrapper-text p {
+.contacts__text p {
   margin: 0;
   margin-bottom: 33px;
   font-size: 18px;
@@ -1228,14 +1227,14 @@ button,
   line-height: 27px;
 }
 
-.contacts__wrapper-text address {
+.contacts__text address {
   position: relative;
   margin-bottom: 21px;
   padding-left: 28px;
   font-style: normal;
 }
 
-.contacts__wrapper-text address::before {
+.contacts__text address::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1245,13 +1244,13 @@ button,
   background-image: url("../../img/map-marker.svg");
 }
 
-.contacts__wrapper-text a {
+.contacts__text a {
   display: block;
   position: relative;
   padding-left: 28px;
 }
 
-.contacts__wrapper-text a::before {
+.contacts__text a::before {
   content: "";
   position: absolute;
   top: 4px;
@@ -1552,7 +1551,11 @@ button,
     column-gap: 30px;
   }
 
-  .contacts__wrapper-map-no-js {
+  .contacts__map {
+    width: 324px;
+  }
+
+  .contacts__map-js {
     width: 324px;
   }
 
@@ -1685,6 +1688,7 @@ button,
   }
 
   .header-navigation__item-js {
+    margin-bottom: 20px;
     color: #011c40;
   }
 
@@ -1915,11 +1919,15 @@ button,
     width: 290px;
   }
 
-  .contacts__wrapper-map-no-js {
+  .contacts__map {
     width: 100%;
   }
 
-  .contacts__wrapper-text {
+  .contacts__map-js {
+    width: 100%;
+  }
+
+  .contacts__text {
     margin-bottom: 40px;
     padding-top: 0;
     -webkit-box-ordinal-group: 0;
@@ -1927,11 +1935,11 @@ button,
     order: -1;
   }
 
-  .contacts__wrapper-text p {
+  .contacts__text p {
     margin-bottom: 40px;
   }
 
-  .contacts__wrapper-text address {
+  .contacts__text address {
     margin-bottom: 33px;
   }
 
@@ -1981,7 +1989,7 @@ button,
   }
 
   .footer-navigation__item {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .footer-navigation__item a {

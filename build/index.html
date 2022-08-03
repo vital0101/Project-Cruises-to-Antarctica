@@ -11,40 +11,42 @@
   </head>
   <body class="page-body">
     <div class="wrapper">
-      <div class="hero-header-wrapper container">
-        <header class="page-header header">
-            <nav class="page-header__nav">
-              <div class="page-header__logo logo">
-                <a>
-                  <svg width="70" height="38" xmlns="http://www.w3.org/2000/svg">
-                    <use href="img/sprite_auto.svg#logo"></use>
-                  </svg>
-                </a>
-              </div>
-              <div class="page-header__site-nav">
-                <ul class="header-navigation">
-                  <li class="header-navigation__item">
-                    <a href="#features">Преимущества </a>
-                  </li>
-                  <li class="header-navigation__item">
-                    <a href="#">Направления</a>
-                  </li>
-                  <li class="header-navigation__item">
-                    <a href="#cruise">Ближайшие круизы</a>
-                  </li>
-                  <li class="header-navigation__item">
-                    <a href="#contacts">Контакты</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-            <button class="page-header__btn-menu btn-menu" type="button" aria-label="Открыть/закрыть меню.">
-            </button>
-        </header>
-        <section class="hero">
-          <h2>Круизы в&nbsp;Антарктику</h2>
-          <p>Волшебный мир айсбергов и&nbsp;пингвинов</p>
-        </section>
+      <div class="hero-header-wrapper">
+        <div class="container">
+          <header class="page-header header">
+              <nav class="page-header__nav">
+                <div class="page-header__logo logo">
+                  <a>
+                    <svg width="70" height="38" xmlns="http://www.w3.org/2000/svg">
+                      <use href="img/sprite_auto.svg#logo"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div class="page-header__site-nav">
+                  <ul class="header-navigation">
+                    <li class="header-navigation__item">
+                      <a href="#features">Преимущества </a>
+                    </li>
+                    <li class="header-navigation__item">
+                      <a href="#">Направления</a>
+                    </li>
+                    <li class="header-navigation__item">
+                      <a href="#cruise">Ближайшие круизы</a>
+                    </li>
+                    <li class="header-navigation__item">
+                      <a href="#contacts">Контакты</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <button class="page-header__btn-menu btn-menu" type="button" aria-label="Открыть/закрыть меню.">
+              </button>
+          </header>
+          <section class="hero">
+            <h1>Круизы в&nbsp;Антарктику</h1>
+            <p>Волшебный мир айсбергов и&nbsp;пингвинов</p>
+          </section>
+        </div>
       </div>
       <main class="page-main main">
         <section class="promo">
@@ -406,38 +408,31 @@
         </section>
         <section class="contacts" id="contacts">
           <div class="contacts__wrapper container">
-            <div class="contacts__map-interactive" id="map"></div>
-              <div class="contacts__wrapper-map-no-js">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1024px)"
-                    srcset="./img/content/map-desktop.webp, ./img/content/map-desktop@2x.webp 2x">
-
-                  <source type="image/webp" media="(max-width: 1023px)"
-                    srcset="./img/content/map-tablet.webp 1x, ./img/content/map-tablet@2x.webp 2x">
-
-                  <source type="image/webp" media="(max-width: 767px)"
-                    srcset="./img/content/map-mobile.webp 1x, ./img/content/map-mobile@2x.webp 2x">
-
-                  <source media="(min-width: 1024px)"
-                    srcset="./img/content/map-desktop.jpg 1x, ./img/content/map-desktop@2x.jpg 2x">
-
-                  <source media="(max-width: 1023px)"
-                    srcset="./img/content/map-tablet.jpg 1x, ./img/content/map-tablet@2x.jpg 2x">
-
-                  <source media="(max-width: 767px)"
-                    srcset="./img/content/map-mobile.jpg 1x, ./img/content/map-mobile@2x.jpg 2x">
-
-                  <img src="./img/content/map-desktop.jpg"
-                    srcset="./img/content/map-desktop@2x.jpg 2x" alt="Наш офис здесь." width="560" height="306">
-                </picture>
-                <img src="./img/content/map-mobile.jpg" alt="Наш офис здесь." width="560" height="306">
-              </div> -->
-              <div class="contacts__wrapper-text">
-                <p>У вас ещё остались вопросы или сомнения?
+            <div class="contacts__map-js" id="map"></div>
+            <div class="contacts__map contacts__map--hidden">
+              <picture>
+                <source type="image/webp" media="(min-width: 1024px)"
+                  srcset="./img/content/map-desktop.webp, ./img/content/map-desktop@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="./img/content/map-tablet.webp 1x, ./img/content/map-tablet@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="./img/content/map-mobile.webp 1x, ./img/content/map-mobile@2x.webp 2x">
+                <source media="(min-width: 1024px)"
+                  srcset="./img/content/map-desktop.jpg 1x, ./img/content/map-desktop@2x.jpg 2x">
+                <source media="(max-width: 1023px)"
+                  srcset="./img/content/map-tablet.jpg 1x, ./img/content/map-tablet@2x.jpg 2x">
+                <source media="(max-width: 767px)"
+                  srcset="./img/content/map-mobile.jpg 1x, ./img/content/map-mobile@2x.jpg 2x">
+                <img src="./img/content/map-desktop.jpg"
+                  srcset="./img/content/map-desktop@2x.jpg 2x" alt="Наш офис здесь." width="560" height="306">
+              </picture>
+            </div>
+            <div class="contacts__text">
+              <p>У вас ещё остались вопросы или сомнения?
                   Приезжайте к нам в офис и мы вам все расскажем.</p>
-                  <address>г. Санкт Петербург, ул. Большая Конюшенная, 19/8</address>
-                  <a href="tel:88002000000">8-800-200-00-00</a>
-              </div>
+              <address>г. Санкт Петербург, ул. Большая Конюшенная, 19/8</address>
+              <a href="tel:88002000000">8-800-200-00-00</a>
+            </div>
           </div>
         </section>
       </main>
