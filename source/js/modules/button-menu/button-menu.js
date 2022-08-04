@@ -2,6 +2,8 @@ const btnMenu = document.querySelector('.page-header__btn-menu');
 const logo = document.querySelector('.logo');
 const headerNav = document.querySelector('.header-navigation');
 const headerNavItem = headerNav.children;
+const headerNavLink = document.querySelectorAll('.header-navigation a');
+// console.log(headerNavLink);
 const siteNav = document.querySelector('.page-header__site-nav');
 const contacts = document.querySelector('.contacts__map');
 
@@ -14,6 +16,17 @@ btnMenu.classList.remove('btn-menu');
 btnMenu.classList.add('btn-menu__js');
 btnMenu.classList.add('btn-menu__js--opened');
 
+const closedMenu = () => {
+  for (let i = 0; i < headerNavLink.length; i++) {
+    headerNavLink[i].addEventListener('click', function () {
+      btnMenu.classList.toggle('btn-menu__js--opened');
+      btnMenu.classList.toggle('btn-menu__js--closed');
+      logo.classList.toggle('logo--js');
+      siteNav.classList.toggle('page-header__site-nav-js--active');
+      addNewClass();
+    });
+  }
+};
 
 const addNewClass = () => {
   if (window.screen.width <= 767) {
@@ -23,6 +36,10 @@ const addNewClass = () => {
         headerNavItem[i].classList.add('header-navigation__item-js');
       }
     }
+    headerNav.classList.toggle('header-navigation');
+    headerNav.classList.toggle('header-navigation__js');
+  } else {
+    headerNav.classList.add('header-navigation');
   }
 };
 
@@ -43,4 +60,4 @@ const swithBtn = () => {
   });
 };
 
-export {swithBtn};
+export {swithBtn, closedMenu};

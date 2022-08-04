@@ -1,6 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import {swithBtn} from './modules/button-menu/button-menu';
+import {closedMenu, swithBtn} from './modules/button-menu/button-menu';
 
 // ---------------------------------
 
@@ -15,6 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   swithBtn();
+  closedMenu();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

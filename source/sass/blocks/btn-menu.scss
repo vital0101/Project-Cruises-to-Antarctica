@@ -17,9 +17,13 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+    z-index: 3;
 
     &--opened::before {
       content: "";
+      position: absolute;
+      top: 5px;
+      right: 15px;
       width: 24px;
       height: 2px;
       background-color: $color-alice-blue;
@@ -30,7 +34,7 @@
       content: "";
       position: absolute;
       top: 5px;
-      right: -2px;
+      right: 15px;
       width: 16px;
       height: 2px;
       background-color: $color-tangaroa;
@@ -41,7 +45,7 @@
       content: "";
       position: absolute;
       top: 5px;
-      right: -2px;
+      right: 15px;
       width: 16px;
       height: 2px;
       background-color: $color-tangaroa;

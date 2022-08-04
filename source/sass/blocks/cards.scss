@@ -127,3 +127,7 @@
   transform: translateY(0%);
   transition: 0.5s;
 }
+
+.cards__back a:hover {
+  opacity: 0.5;
+}

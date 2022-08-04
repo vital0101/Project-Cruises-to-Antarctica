@@ -642,7 +642,6 @@ button,
 .page-body {
   margin: 0 auto;
   max-width: 100%;
-  overflow-x: hidden;
 }
 
 .hero-header-wrapper {
@@ -655,7 +654,6 @@ button,
 }
 
 .page-header {
-  position: relative;
   padding: 35px 0;
   margin-bottom: 157px;
 }
@@ -689,7 +687,7 @@ button,
 .logo--js {
   position: relative;
   margin-left: 35px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .page-nav {
@@ -1049,6 +1047,10 @@ button,
   transition: 0.5s;
 }
 
+.cards__back a:hover {
+  opacity: 0.5;
+}
+
 .booking {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -1181,6 +1183,10 @@ button,
   line-height: 21px;
   border: none;
   cursor: pointer;
+}
+
+.form button:hover {
+  opacity: 0.5;
 }
 
 .contacts {
@@ -1621,7 +1627,6 @@ button,
   }
 
   .page-header__nav {
-    position: relative;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -1634,17 +1639,30 @@ button,
 
   .page-header__site-nav-js {
     position: absolute;
-    top: -20px;
-    left: 20px;
-    background-color: #f9fbfd;
+    top: 0;
+    left: 0;
+    background-image: url("../../img/content/intro-tablet.jpg");
+    background-repeat: no-repeat;
     width: 100vw;
-    padding-top: 85px;
-    padding-left: 25px;
+    height: 100%;
+    padding-left: 35px;
     display: none;
+    z-index: 1;
   }
 
   .page-header__site-nav-js--active {
     display: block;
+  }
+
+  .page-header__site-nav-js::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 43, 102, 0.5);
+    z-index: -1;
   }
 
   .page-header__btn-menu {
@@ -1685,6 +1703,16 @@ button,
     line-height: 22px;
   }
 
+  .header-navigation__js {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-top: 85px;
+    padding-left: 24px;
+    height: 100%;
+    background-color: #f9fbfd;
+  }
+
   .header-navigation__item-js {
     margin-bottom: 26px;
     color: #011c40;
@@ -1717,10 +1745,14 @@ button,
     background-color: transparent;
     border: none;
     cursor: pointer;
+    z-index: 3;
   }
 
   .btn-menu__js--opened::before {
     content: "";
+    position: absolute;
+    top: 5px;
+    right: 15px;
     width: 24px;
     height: 2px;
     background-color: #f9fbfd;
@@ -1732,7 +1764,7 @@ button,
     content: "";
     position: absolute;
     top: 5px;
-    right: -2px;
+    right: 15px;
     width: 16px;
     height: 2px;
     background-color: #011c40;
@@ -1745,7 +1777,7 @@ button,
     content: "";
     position: absolute;
     top: 5px;
-    right: -2px;
+    right: 15px;
     width: 16px;
     height: 2px;
     background-color: #011c40;
@@ -2005,6 +2037,10 @@ button,
   .hero-header-wrapper {
     min-height: 500px;
     background-image: url("../img/content/intro-mobile.jpg");
+  }
+
+  .page-header__site-nav-js {
+    background-image: url("../../img/content/intro-mobile.jpg");
   }
 
   .offer-cards {

@@ -54,6 +54,18 @@
   }
 }
 
+.header-navigation__js {
+  @media (max-width: $vp-767) {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-top: 85px;
+    padding-left: 24px;
+    height: 100%;
+    background-color: $color-alice-blue;
+  }
+}
+
 .header-navigation__item-js {
   margin-right: 33px;
   color: $color-alice-blue;

@@ -1,5 +1,4 @@
 .page-header {
-  position: relative;
   padding: 35px 0;
   margin-bottom: 157px;
 
@@ -23,7 +22,6 @@
   align-items: flex-start;
 
   @media (max-width: $vp-767) {
-    position: relative;
     flex-direction: column;
   }
 }
@@ -37,17 +35,34 @@
 .page-header__site-nav-js {
   @media (max-width: $vp-767) {
     position: absolute;
-    top: -20px;
-    left: 20px;
-    background-color: $color-alice-blue;
+    top: 0;
+    left: 0;
+    background-image: url("../../img/content/intro-tablet.jpg");
+    background-repeat: no-repeat;
     width: 100vw;
-    padding-top: 85px;
-    padding-left: 25px;
+    height: 100%;
+    padding-left: 35px;
     display: none;
+    z-index: 1;
 
     &--active {
       display: block;
     }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 43, 102, 0.5);
+      z-index: -1;
+    }
+  }
+
+  @media (max-width: $vp-320) {
+    background-image: url("../../img/content/intro-mobile.jpg");
   }
 }
 
