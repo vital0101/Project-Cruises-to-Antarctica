@@ -740,7 +740,6 @@ button,
 
 .header-navigation__item a {
   display: block;
-  padding: 10px 0;
   font-weight: 500;
   color: inherit;
 }
@@ -819,12 +818,11 @@ button,
 }
 
 .promo__img-wrapper {
-  max-width: 560px;
+  width: 560px;
   background-color: #011c40;
 }
 
 .promo__img-wrapper img {
-  height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -898,11 +896,15 @@ button,
 }
 
 .features__wrapper-img--mark {
+  margin-top: 4px;
+  margin-bottom: 23px;
   width: 38px;
   height: 21px;
 }
 
 .features__wrapper-img--boat {
+  margin-top: 6px;
+  margin-bottom: 27px;
   width: 42px;
   height: 15px;
 }
@@ -1110,7 +1112,10 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 45px 50px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  padding-left: 50px;
+  padding-right: 50px;
   width: 403px;
   min-height: 455px;
   background-color: #011c40;
@@ -1126,6 +1131,9 @@ button,
 }
 
 .form label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-size: 10px;
   line-height: 13px;
   color: #f9fbfd;
@@ -1151,7 +1159,6 @@ button,
 
 .form input[type="checkbox"] + label::before {
   content: "";
-  display: inline-block;
   margin-right: 5px;
   width: 18px;
   height: 18px;
@@ -1204,7 +1211,7 @@ button,
 }
 
 .contacts__map {
-  margin-right: 10px;
+  margin-right: 20px;
   width: 560px;
   height: 306px;
 }
@@ -1221,6 +1228,7 @@ button,
 }
 
 .contacts__map-js {
+  margin-right: 20px;
   width: 560px;
   height: 306px;
 }
@@ -1250,8 +1258,8 @@ button,
 .contacts__text address::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 2px;
+  top: 5px;
+  left: 0;
   width: 18px;
   height: 22px;
   background-image: url("../../img/map-marker.svg");
@@ -1266,8 +1274,8 @@ button,
 .contacts__text a::before {
   content: "";
   position: absolute;
-  top: 4px;
-  left: 2px;
+  top: 2px;
+  left: -1px;
   width: 18px;
   height: 22px;
   background-image: url("../../img/phone.svg");
@@ -1326,7 +1334,6 @@ button,
 
 .footer-navigation__item a {
   display: block;
-  padding: 10px 0;
   font-weight: 500;
   color: #f9fbfd;
 }
@@ -1392,21 +1399,6 @@ button,
     min-height: 20px;
   }
 
-  .features__wrapper-img--ship {
-    width: 21px;
-    height: 26px;
-  }
-
-  .features__wrapper-img--mark {
-    width: 33px;
-    height: 19px;
-  }
-
-  .features__wrapper-img--boat {
-    width: 38px;
-    height: 13px;
-  }
-
   .footer-navigation {
     min-height: 20px;
   }
@@ -1422,12 +1414,13 @@ button,
   }
 
   .hero-header-wrapper {
-    min-height: 638px;
+    min-height: 635px;
     background-image: url("../img/content/intro-tablet.jpg");
   }
 
   .page-header {
-    padding: 30px 0;
+    margin-bottom: 184px;
+    padding: 27px 0;
   }
 
   .logo a svg {
@@ -1458,12 +1451,13 @@ button,
   }
 
   .hero p {
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 18px;
+    line-height: 22px;
   }
 
   .promo {
-    padding: 100px 0;
+    padding-top: 89px;
+    padding-bottom: 94px;
   }
 
   .promo__text-wrapper {
@@ -1472,21 +1466,24 @@ button,
   }
 
   .promo__text-wrapper h2 {
-    margin-bottom: 30px;
+    margin-bottom: 18px;
+    width: 210px;
     font-size: 26px;
     line-height: 36px;
   }
 
   .promo__text-wrapper p {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .promo__img-wrapper {
-    max-width: 324px;
+    margin-top: 11px;
+    width: 324px;
+    height: 264px;
   }
 
   .features__wrapper {
-    padding-top: 100px;
+    padding-top: 90px;
     padding-bottom: 100px;
     min-height: 588px;
   }
@@ -1502,8 +1499,41 @@ button,
   }
 
   .features__item {
-    padding: 25px 20px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 16px;
     width: 206px;
+    min-height: 310px;
+  }
+
+  .features__wrapper-img--ship {
+    width: 21px;
+    height: 26px;
+  }
+
+  .features__wrapper-img--mark {
+    margin-bottom: 24px;
+    width: 33px;
+    height: 19px;
+  }
+
+  .features__wrapper-img--boat {
+    margin-top: 5px;
+    margin-bottom: 24px;
+    width: 38px;
+    height: 13px;
+  }
+
+  .offer-cards {
+    padding-top: 90px;
+    padding-bottom: 99px;
+  }
+
+  .offer-cards h2 {
+    margin-bottom: 48px;
+    font-size: 26px;
+    line-height: 39px;
   }
 
   .cards {
@@ -1516,6 +1546,17 @@ button,
 
   .cards__front img {
     width: 309px;
+  }
+
+  .cards__front h3 {
+    bottom: 28px;
+    left: 34px;
+  }
+
+  .booking {
+    padding-top: 89px;
+    padding-bottom: 100px;
+    background-image: url("../img/content/booking-bg-table.jpg");
   }
 
   .booking__wrapper {
@@ -1540,20 +1581,25 @@ button,
   }
 
   .booking__wrapper-text h2 {
-    margin-bottom: 25px;
+    margin-bottom: 5px;
     font-size: 34px;
     line-height: 51px;
     text-align: center;
   }
 
   .booking__wrapper-text p {
-    margin-bottom: 60px;
+    margin-bottom: 52px;
     width: 355px;
     text-align: center;
   }
 
   .booking__wrapper-form {
     margin-right: 0;
+  }
+
+  .contacts {
+    padding-top: 101px;
+    padding-bottom: 99px;
   }
 
   .contacts__wrapper {
@@ -1570,9 +1616,23 @@ button,
 
   .contacts__map-js {
     width: 324px;
+    height: 335px;
+  }
+
+  .contacts__text {
+    width: 324px;
+  }
+
+  .contacts__text p {
+    margin-bottom: 22px;
+  }
+
+  .page-footer {
+    padding: 50px 0;
   }
 
   .page-footer__logo {
+    margin-right: 24px;
     width: 38px;
     height: 20px;
   }
@@ -1582,14 +1642,22 @@ button,
   }
 
   .footer-navigation__item a {
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .social__item svg {
+    height: 15px;
   }
 }
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1023px) and (min-resolution: 2dppx) {
   .hero-header-wrapper {
     background-image: url("../img/content/intro-tablet@2x.jpg");
+  }
+
+  .booking {
+    background-image: url("../img/content/booking-bg-table@2x.jpg");
   }
 }
 
@@ -1602,18 +1670,6 @@ button,
   .main-nav__site-nav {
     display: none;
   }
-
-  .booking {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    background-image: url("../img/content/booking-bg-table.jpg");
-  }
-}
-
-@media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 768px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 768px) and (min-resolution: 2dppx) {
-  .booking {
-    background-image: url("../img/content/booking-bg-table@2x.jpg");
-  }
 }
 
 @media (max-width: 767px) {
@@ -1623,7 +1679,7 @@ button,
 
   .page-header {
     padding: 20px 0;
-    margin-bottom: 77px;
+    margin-bottom: 107px;
   }
 
   .page-header__nav {
@@ -1858,7 +1914,7 @@ button,
     -webkit-column-gap: 20px;
     -moz-column-gap: 20px;
     column-gap: 20px;
-    row-gap: 27px;
+    row-gap: 30px;
   }
 
   .features__item {
@@ -1866,9 +1922,30 @@ button,
     width: 100%;
   }
 
+  .features__wrapper-img--mark {
+    margin-top: 4px;
+    margin-bottom: 21px;
+  }
+
+  .features__wrapper-img--boat {
+    margin-top: 5px;
+    margin-bottom: 23px;
+  }
+
   .features__item h3 {
     width: 170px;
     line-height: 26px;
+  }
+
+  .offer-cards {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .offer-cards h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 36px;
   }
 
   .cards {
@@ -1896,30 +1973,36 @@ button,
   }
 
   .booking {
-    padding-top: 65px;
+    padding-top: 62px;
     padding-bottom: 65px;
+    background-image: url("../img/content/booking-bg-mobile.jpg");
   }
 
   .booking__wrapper-text h2 {
+    margin-bottom: 13px;
     width: 200px;
     font-size: 24px;
     line-height: 31px;
   }
 
   .booking__wrapper-text p {
-    margin-bottom: 40px;
+    margin-bottom: 34px;
     font-size: 16px;
     line-height: 22px;
     width: 257px;
   }
 
   .form {
-    padding: 40px 30px;
+    padding-top: 35px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
     width: 290px;
   }
 
   .form p {
-    margin-bottom: 35px;
+    margin-bottom: 28px;
+    line-height: 25px;
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
@@ -1927,13 +2010,21 @@ button,
     width: 197px;
   }
 
+  .form label {
+    line-height: 12px;
+  }
+
   .form input[type="checkbox"] + label::before {
-    width: 20px;
+    width: 25px;
     height: 20px;
   }
 
+  .form button {
+    margin-top: 26px;
+  }
+
   .contacts {
-    padding-top: 65px;
+    padding-top: 58px;
     padding-bottom: 65px;
   }
 
@@ -1946,7 +2037,6 @@ button,
     -ms-flex-direction: column;
     flex-direction: column;
     margin: 0 auto;
-    width: 290px;
   }
 
   .contacts__map {
@@ -1955,10 +2045,11 @@ button,
 
   .contacts__map-js {
     width: 100%;
+    height: 316px;
   }
 
   .contacts__text {
-    margin-bottom: 40px;
+    margin-bottom: 36px;
     padding-top: 0;
     -webkit-box-ordinal-group: 0;
     -ms-flex-order: -1;
@@ -1966,11 +2057,11 @@ button,
   }
 
   .contacts__text p {
-    margin-bottom: 40px;
+    margin-bottom: 27px;
   }
 
   .contacts__text address {
-    margin-bottom: 33px;
+    margin-bottom: 21px;
   }
 
   .page-footer {
@@ -1998,7 +2089,7 @@ button,
   }
 
   .page-footer__logo {
-    margin-bottom: 20px;
+    margin-bottom: 23px;
     width: 42px;
     height: 22px;
   }
@@ -2019,7 +2110,7 @@ button,
   }
 
   .footer-navigation__item {
-    margin-bottom: 0;
+    margin-bottom: 8px;
   }
 
   .footer-navigation__item a {
@@ -2029,7 +2120,17 @@ button,
   }
 
   .social {
-    margin-top: 30px;
+    margin-top: 15px;
+  }
+
+  .social__item svg {
+    height: 15px;
+  }
+}
+
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 767px) and (min-resolution: 2dppx) {
+  .booking {
+    background-image: url("../img/content/booking-bg-mobile@2x.jpg");
   }
 }
 
@@ -2041,16 +2142,6 @@ button,
 
   .page-header__site-nav-js {
     background-image: url("../../img/content/intro-mobile.jpg");
-  }
-
-  .offer-cards {
-    padding-top: 57px;
-  }
-
-  .offer-cards h2 {
-    margin-bottom: 30px;
-    font-size: 24px;
-    line-height: 36px;
   }
 }
 

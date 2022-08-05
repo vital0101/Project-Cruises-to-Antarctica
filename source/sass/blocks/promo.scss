@@ -2,7 +2,8 @@
   padding: 118px 0;
 
   @media (max-width: $vp-1023) {
-    padding: 100px 0;
+    padding-top: 89px;
+    padding-bottom: 94px;
   }
 
   @media (max-width: $vp-767) {
@@ -45,7 +46,8 @@
   line-height: 42px;
 
   @media (max-width: $vp-1023) {
-    margin-bottom: 30px;
+    margin-bottom: 18px;
+    width: 210px;
     font-size: 26px;
     line-height: 36px;
   }
@@ -62,7 +64,7 @@
   margin: 0;
 
   @media (max-width: $vp-1023) {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   @media (max-width: $vp-767) {
@@ -72,11 +74,13 @@
 }
 
 .promo__img-wrapper {
-  max-width: 560px;
+  width: 560px;
   background-color: $color-tangaroa;
 
   @media (max-width: $vp-1023) {
-    max-width: 324px;
+    margin-top: 11px;
+    width: 324px;
+    height: 264px;
   }
 
   @media (max-width: $vp-767) {
@@ -86,7 +90,6 @@
 }
 
 .promo__img-wrapper img {
-  height: 100%;
   object-fit: cover;
 
   @media (max-width: $vp-767) {

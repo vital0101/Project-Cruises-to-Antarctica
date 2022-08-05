@@ -9,8 +9,8 @@
     background-image: url("../img/content/booking-bg-desktop@2x.jpg");
   }
 
-  @media (max-width: $vp-768) {
-    padding-top: 100px;
+  @media (max-width: $vp-1023) {
+    padding-top: 89px;
     padding-bottom: 100px;
     background-image: url("../img/content/booking-bg-table.jpg");
 
@@ -20,8 +20,13 @@
   }
 
   @media (max-width: $vp-767) {
-    padding-top: 65px;
+    padding-top: 62px;
     padding-bottom: 65px;
+    background-image: url("../img/content/booking-bg-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/content/booking-bg-mobile@2x.jpg");
+    }
   }
 }
 
@@ -58,13 +63,14 @@
   line-height: 60px;
 
   @media (max-width: $vp-1023) {
-    margin-bottom: 25px;
+    margin-bottom: 5px;
     font-size: 34px;
     line-height: 51px;
     text-align: center;
   }
 
   @media (max-width: $vp-767) {
+    margin-bottom: 13px;
     width: 200px;
     font-size: 24px;
     line-height: 31px;
@@ -78,13 +84,13 @@
   width: 352px;
 
   @media (max-width: $vp-1023) {
-    margin-bottom: 60px;
+    margin-bottom: 52px;
     width: 355px;
     text-align: center;
   }
 
   @media (max-width: $vp-767) {
-    margin-bottom: 40px;
+    margin-bottom: 34px;
     font-size: 16px;
     line-height: 22px;
     width: 257px;

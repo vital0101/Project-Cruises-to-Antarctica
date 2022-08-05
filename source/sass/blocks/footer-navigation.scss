@@ -27,7 +27,7 @@
   }
 
   @media (max-width: $vp-767) {
-    margin-bottom: 0;
+    margin-bottom: 8px;
   }
 }
 
@@ -37,13 +37,12 @@
 
 .footer-navigation__item a {
   display: block;
-  padding: 10px 0;
   font-weight: 500;
   color: $color-alice-blue;
 
   @media (max-width: $vp-1023) {
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 12px;
+    line-height: 15px;
   }
 
   @media (max-width: $vp-767) {

@@ -2,8 +2,14 @@
   padding-top: 110px;
   padding-bottom: 120px;
 
-  @media (max-width: $vp-320) {
-    padding-top: 57px;
+  @media (max-width: $vp-1023) {
+    padding-top: 90px;
+    padding-bottom: 99px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -15,7 +21,13 @@
   line-height: 42px;
   text-align: center;
 
-  @media (max-width: $vp-320) {
+  @media (max-width: $vp-1023) {
+    margin-bottom: 48px;
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  @media (max-width: $vp-767) {
     margin-bottom: 30px;
     font-size: 24px;
     line-height: 36px;

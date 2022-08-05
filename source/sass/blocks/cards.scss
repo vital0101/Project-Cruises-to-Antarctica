@@ -78,6 +78,11 @@
   line-height: 27px;
   color: $color-alice-blue;
 
+  @media (max-width: $vp-1023) {
+    bottom: 28px;
+    left: 34px;
+  }
+
   @media (max-width: $vp-767) {
     bottom: 17px;
     left: 25px;
