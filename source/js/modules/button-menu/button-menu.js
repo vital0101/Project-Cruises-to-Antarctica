@@ -5,12 +5,14 @@ const headerNavItem = headerNav.children;
 const headerNavLink = document.querySelectorAll('.header-navigation a');
 // console.log(headerNavLink);
 const siteNav = document.querySelector('.page-header__site-nav');
-const contacts = document.querySelector('.contacts__map');
+const contactsMap = document.querySelector('.contacts__map');
+const contactsMapJs = document.querySelector('.contacts__map-js');
 
 siteNav.classList.remove('page-header__site-nav');
 siteNav.classList.add('page-header__site-nav-js');
 
-contacts.classList.add('contacts__map--hidden');
+contactsMap.classList.add('contacts__map--hidden');
+contactsMapJs.classList.remove('contacts__map-js--hidden');
 
 btnMenu.classList.remove('btn-menu');
 btnMenu.classList.add('btn-menu__js');

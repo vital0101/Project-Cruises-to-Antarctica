@@ -34,6 +34,7 @@
   margin-right: 40px;
   width: 70px;
   height: 38px;
+  align-self: flex-start;
 
   @media (max-width: $vp-1023) {
     margin-right: 24px;
@@ -50,6 +51,7 @@
 
 .page-footer__social {
   margin-left: 40px;
+  align-self: flex-start;
 
   @media (max-width: $vp-767) {
     margin-left: 0;
