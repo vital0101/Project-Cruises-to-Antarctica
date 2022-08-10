@@ -50,8 +50,14 @@
 }
 
 .page-footer__social {
+  margin-top: 10px;
   margin-left: 40px;
   align-self: flex-start;
+
+  @media (max-width: $vp-1023) {
+    margin-left: 20px;
+    margin-top: 3px;
+  }
 
   @media (max-width: $vp-767) {
     margin-left: 0;

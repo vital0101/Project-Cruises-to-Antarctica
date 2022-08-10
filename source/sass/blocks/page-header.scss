@@ -38,10 +38,9 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url("../../img/content/intro-tablet.jpg");
+    background-image: url("../img/content/intro-tablet.jpg");
     background-repeat: no-repeat;
     width: 100vw;
-    height: 100%;
     padding-left: 35px;
     display: none;
     z-index: 1;
@@ -63,7 +62,7 @@
   }
 
   @media (max-width: $vp-320) {
-    background-image: url("../../img/content/intro-mobile.jpg");
+    background-image: url("../img/content/intro-mobile.jpg");
   }
 }
 

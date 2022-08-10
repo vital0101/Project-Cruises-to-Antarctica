@@ -28,12 +28,13 @@
   max-width: 512px;
 
   @media (max-width: $vp-1023) {
-    max-width: 324px;
+    width: 324px;
     padding-top: 0;
+    flex-grow: 1;
   }
 
   @media (max-width: $vp-767) {
-    width: 290px;
+    width: 100%;
     margin-right: 0;
   }
 }
@@ -91,6 +92,7 @@
 
 .promo__img-wrapper img {
   object-fit: cover;
+  height: 100%;
 
   @media (max-width: $vp-767) {
     width: 290px;

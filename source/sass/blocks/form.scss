@@ -1,11 +1,11 @@
 .form {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding-top: 45px;
   padding-bottom: 45px;
   padding-left: 50px;
   padding-right: 50px;
-  width: 403px;
   min-height: 455px;
   background-color: $color-tangaroa;
 
@@ -14,7 +14,6 @@
     padding-bottom: 40px;
     padding-left: 30px;
     padding-right: 30px;
-    width: 290px;
   }
 }
 
@@ -31,7 +30,6 @@
     line-height: 25px;
     align-self: center;
     text-align: center;
-    width: 197px;
   }
 }
 
@@ -54,10 +52,13 @@
   border: none;
   font-size: 14px;
   line-height: 21px;
+  background-color: $color-alice-blue;
 }
 
 .form input[type="checkbox"] {
-  display: none;
+  width: 0;
+  height: 0;
+  margin: 0;
 }
 
 .form input[type="checkbox"] + label {
@@ -65,7 +66,6 @@
 
   &::before {
     content: "";
-    // display: inline-block;
     margin-right: 5px;
     width: 18px;
     height: 18px;
@@ -77,6 +77,10 @@
       height: 20px;
     }
   }
+}
+
+.form input[type="checkbox"]:focus + label::before {
+  outline: 1px solid $color-torch-red;
 }
 
 .form input[type="checkbox"]:checked + label::before {
@@ -96,6 +100,7 @@
   font-weight: 600;
   line-height: 21px;
   border: none;
+  background-color: $color-alice-blue;
   cursor: pointer;
 
   @media (max-width: $vp-767) {
@@ -105,4 +110,28 @@
 
 .form button:hover {
   opacity: 0.5;
+}
+
+.form span {
+  display: none;
+  position: absolute;
+  left: 49px;
+  bottom: 80px;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  background-color: $color-hawkes-blue;
+  color: $color-tangaroa;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: 3px;
+    width: 15px;
+    height: 15px;
+    background-color: $color-hawkes-blue;
+    transform: rotate(45deg);
+  }
 }
