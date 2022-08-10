@@ -80,10 +80,10 @@ const closedMenuClickOutside = () => {
   document.addEventListener('click', (e) => {
     const click = e.composedPath().includes(pageHeader);
     if (!click) {
-      btnMenu.classList.toggle('btn-menu__js--opened');
-      btnMenu.classList.toggle('btn-menu__js--closed');
-      logo.classList.toggle('logo--js');
-      siteNav.classList.toggle('page-header__site-nav-js--active');
+      btnMenu.classList.add('btn-menu__js--opened');
+      btnMenu.classList.remove('btn-menu__js--closed');
+      logo.classList.remove('logo--js');
+      siteNav.classList.remove('page-header__site-nav-js--active');
       addNewClass();
     }
   });
