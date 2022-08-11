@@ -1043,7 +1043,7 @@ button,
   background-color: #f9fbfd;
 }
 
-.cards__item a:focus .cards__back {
+.cards__back:focus-within {
   -webkit-transform: translateX(0%);
   -ms-transform: translateX(0%);
   transform: translateX(0%);
