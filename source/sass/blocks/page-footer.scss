@@ -3,7 +3,8 @@
   background-color: $color-tangaroa;
 
   @media (max-width: $vp-1023) {
-    padding: 50px 0;
+    padding-top: 50px;
+    padding-bottom: 40px;
   }
 
   @media (max-width: $vp-767) {
@@ -23,6 +24,7 @@
 
 .page-footer__nav {
   margin-right: auto;
+  align-self: flex-start;
 
   @media (max-width: $vp-767) {
     flex-direction: column;
@@ -51,7 +53,7 @@
 
 .page-footer__social {
   margin-top: 10px;
-  margin-left: 40px;
+  margin-left: 20px;
   align-self: flex-start;
 
   @media (max-width: $vp-1023) {

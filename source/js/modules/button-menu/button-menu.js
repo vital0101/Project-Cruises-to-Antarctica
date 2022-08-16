@@ -1,4 +1,4 @@
-const pageHeader = document.querySelector('.page-header');
+const pageBody = document.querySelector('.page-body');
 const btnMenu = document.querySelector('.page-header__btn-menu');
 const logo = document.querySelector('.logo');
 const headerNav = document.querySelector('.header-navigation');
@@ -61,6 +61,7 @@ const addNewClass = () => {
 
 const swithBtn = () => {
   btnMenu.addEventListener('click', function () {
+    pageBody.classList.toggle('page-body--hidden');
     btnMenu.classList.toggle('btn-menu__js--opened');
     btnMenu.classList.toggle('btn-menu__js--closed');
     logo.classList.toggle('logo--js');
@@ -77,13 +78,14 @@ const swithBtn = () => {
 };
 
 const closedMenuClickOutside = () => {
-  document.addEventListener('click', (e) => {
-    const click = e.composedPath().includes(pageHeader);
+  siteNav.addEventListener('click', (e) => {
+    const click = e.composedPath().includes(headerNav);
     if (!click) {
       btnMenu.classList.add('btn-menu__js--opened');
       btnMenu.classList.remove('btn-menu__js--closed');
       logo.classList.remove('logo--js');
       siteNav.classList.remove('page-header__site-nav-js--active');
+      pageBody.classList.toggle('page-body--hidden');
       addNewClass();
     }
   });

@@ -76,6 +76,7 @@
 
 .promo__img-wrapper {
   width: 560px;
+  flex-shrink: 0;
   background-color: $color-tangaroa;
 
   @media (max-width: $vp-1023) {

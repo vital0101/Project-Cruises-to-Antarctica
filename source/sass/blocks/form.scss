@@ -7,7 +7,12 @@
   padding-left: 50px;
   padding-right: 50px;
   min-height: 455px;
+  width: 403px;
   background-color: $color-tangaroa;
+
+  @media (max-width: $vp-1023) {
+    width: 100%;
+  }
 
   @media (max-width: $vp-767) {
     padding-top: 35px;
@@ -115,23 +120,57 @@
 .form span {
   display: none;
   position: absolute;
-  left: 49px;
-  bottom: 80px;
-  padding: 5px;
+  left: 30px;
+  bottom: 73px;
+  padding: 8px 8px 8px 40px;
   font-size: 14px;
   font-weight: 600;
   line-height: 21px;
-  background-color: $color-hawkes-blue;
+  background-color: $color-alice-blue;
+  border: 1px solid $color-tangaroa;
+  border-radius: 5px;
   color: $color-tangaroa;
+
+  @media (max-width: $vp-767) {
+    bottom: 100px;
+    left: 11px;
+  }
+
+  @media (max-width: $vp-680) {
+    bottom: 79px;
+    left: 11px;
+  }
+
+  @media (max-width: $vp-400) {
+    bottom: 60px;
+    left: 11px;
+  }
+
+  @media (max-width: $vp-320) {
+    bottom: 58px;
+    left: 11px;
+  }
 
   &::before {
     content: "";
     position: absolute;
     top: -7px;
-    left: 3px;
+    left: 19px;
     width: 15px;
     height: 15px;
-    background-color: $color-hawkes-blue;
+    background-color: $color-alice-blue;
     transform: rotate(45deg);
+  }
+
+  &::after {
+    content: "!";
+    position: absolute;
+    top: 8px;
+    left: 9px;
+    width: 20px;
+    height: 20px;
+    background-color: $color-orange;
+    color: $color-alice-blue;
+    text-align: center;
   }
 }

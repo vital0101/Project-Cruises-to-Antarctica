@@ -2,4 +2,8 @@
   margin: 0 auto;
   max-width: 100%;
   background-color: $color-alice-blue;
+
+  &--hidden {
+    overflow: hidden;
+  }
 }

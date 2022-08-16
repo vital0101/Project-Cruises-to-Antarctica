@@ -645,6 +645,10 @@ button,
   background-color: #f9fbfd;
 }
 
+.page-body--hidden {
+  overflow: hidden;
+}
+
 .hero-header-wrapper {
   min-height: 650px;
   background-color: #011c40;
@@ -820,6 +824,8 @@ button,
 
 .promo__img-wrapper {
   width: 560px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   background-color: #011c40;
 }
 
@@ -1118,6 +1124,7 @@ button,
   padding-left: 50px;
   padding-right: 50px;
   min-height: 455px;
+  width: 403px;
   background-color: #011c40;
 }
 
@@ -1207,13 +1214,15 @@ button,
 .form span {
   display: none;
   position: absolute;
-  left: 49px;
-  bottom: 80px;
-  padding: 5px;
+  left: 30px;
+  bottom: 73px;
+  padding: 8px 8px 8px 40px;
   font-size: 14px;
   font-weight: 600;
   line-height: 21px;
-  background-color: #cad7e5;
+  background-color: #f9fbfd;
+  border: 1px solid #011c40;
+  border-radius: 5px;
   color: #011c40;
 }
 
@@ -1221,13 +1230,25 @@ button,
   content: "";
   position: absolute;
   top: -7px;
-  left: 3px;
+  left: 19px;
   width: 15px;
   height: 15px;
-  background-color: #cad7e5;
+  background-color: #f9fbfd;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+.form span::after {
+  content: "!";
+  position: absolute;
+  top: 8px;
+  left: 9px;
+  width: 20px;
+  height: 20px;
+  background-color: #ffa500;
+  color: #f9fbfd;
+  text-align: center;
 }
 
 .contacts {
@@ -1242,6 +1263,9 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
 }
 
 .contacts__map {
@@ -1272,9 +1296,7 @@ button,
 
 .contacts__text {
   max-width: 500px;
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+  margin-top: 78px;
 }
 
 .contacts__text p {
@@ -1295,7 +1317,7 @@ button,
 .contacts__text address::before {
   content: "";
   position: absolute;
-  top: 5px;
+  top: 0;
   left: 0;
   width: 18px;
   height: 22px;
@@ -1315,7 +1337,7 @@ button,
   top: 2px;
   left: -1px;
   width: 18px;
-  height: 22px;
+  height: 18px;
   background-image: url("../img/phone.svg");
 }
 
@@ -1335,6 +1357,8 @@ button,
 
 .page-footer__nav {
   margin-right: auto;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
 }
 
 .page-footer__logo {
@@ -1347,7 +1371,7 @@ button,
 
 .page-footer__social {
   margin-top: 10px;
-  margin-left: 40px;
+  margin-left: 20px;
   -ms-flex-item-align: start;
   align-self: flex-start;
 }
@@ -1395,11 +1419,14 @@ button,
   padding: 0;
   list-style: none;
   margin-right: -28px;
+  width: 146px;
 }
 
 .social__item {
   margin-bottom: 10px;
   margin-right: 28px;
+  height: 20px;
+  width: 20px;
 }
 
 .social__item a {
@@ -1448,10 +1475,13 @@ button,
 
   .social {
     margin-right: -10px;
+    width: 114px;
   }
 
   .social__item {
     margin-right: 10px;
+    width: 16px;
+    height: 16px;
   }
 }
 
@@ -1656,7 +1686,12 @@ button,
   }
 
   .booking__wrapper-form {
-    margin-right: 0;
+    margin-right: 137px;
+    margin-left: 137px;
+  }
+
+  .form {
+    width: 100%;
   }
 
   .contacts {
@@ -1669,9 +1704,9 @@ button,
     display: grid;
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    -webkit-column-gap: 30px;
-    -moz-column-gap: 30px;
-    column-gap: 30px;
+    -webkit-column-gap: 33px;
+    -moz-column-gap: 33px;
+    column-gap: 33px;
   }
 
   .contacts__map {
@@ -1684,13 +1719,17 @@ button,
     height: 335px;
   }
 
+  .contacts__text {
+    margin-top: 63px;
+  }
+
   .contacts__text p {
-    margin-top: 15px;
     margin-bottom: 25px;
   }
 
   .page-footer {
-    padding: 50px 0;
+    padding-top: 50px;
+    padding-bottom: 40px;
   }
 
   .page-footer__logo {
@@ -1722,7 +1761,7 @@ button,
   }
 
   .social__item svg {
-    height: 15px;
+    height: 16px;
   }
 }
 
@@ -1776,27 +1815,15 @@ button,
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url("../img/content/intro-tablet.jpg");
-    background-repeat: no-repeat;
     width: 100vw;
+    height: 100vh;
     padding-left: 35px;
     display: none;
-    z-index: 1;
+    background: rgba(0, 43, 102, 0.5);
   }
 
   .page-header__site-nav-js--active {
     display: block;
-  }
-
-  .page-header__site-nav-js::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 43, 102, 0.5);
-    z-index: -1;
   }
 
   .page-header__btn-menu {
@@ -2071,7 +2098,12 @@ button,
     margin-bottom: 34px;
     font-size: 16px;
     line-height: 22px;
-    width: 257px;
+    width: 80%;
+  }
+
+  .booking__wrapper-form {
+    margin-right: 0;
+    margin-left: 0;
   }
 
   .form {
@@ -2101,6 +2133,11 @@ button,
 
   .form button {
     margin-top: 26px;
+  }
+
+  .form span {
+    bottom: 100px;
+    left: 11px;
   }
 
   .contacts {
@@ -2203,10 +2240,23 @@ button,
 
   .social {
     margin-top: 15px;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
   }
+}
 
-  .social__item svg {
-    height: 15px;
+@media (max-width: 680px) {
+  .form span {
+    bottom: 79px;
+    left: 11px;
+  }
+}
+
+@media (max-width: 400px) {
+  .form span {
+    bottom: 60px;
+    left: 11px;
   }
 }
 
@@ -2228,6 +2278,11 @@ button,
     padding-top: 62px;
     padding-bottom: 65px;
     background-image: url("../img/content/booking-bg-mobile.jpg");
+  }
+
+  .form span {
+    bottom: 58px;
+    left: 11px;
   }
 }
 
