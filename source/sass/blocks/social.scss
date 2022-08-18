@@ -5,16 +5,11 @@
   padding: 0;
   list-style: none;
   margin-right: -28px;
-  width: 146px;
-
-
-  @media (max-width: $vp-1024) {
-    margin-right: -10px;
-    width: 114px;
-  }
+  width: 144px;
 
   @media (max-width: $vp-1023) {
     margin-right: -19px;
+    width: 105px;
   }
 
   @media (max-width: $vp-767) {
@@ -29,13 +24,13 @@
   height: 20px;
   width: 20px;
 
-  @media (max-width: $vp-1024) {
-    margin-right: 10px;
+  @media (max-width: $vp-1023) {
+    margin-right: 19px;
     width: 16px;
     height: 16px;
   }
 
-  @media (max-width: $vp-1023) {
+  @media (max-width: $vp-767) {
     margin-right: 18px;
   }
 }

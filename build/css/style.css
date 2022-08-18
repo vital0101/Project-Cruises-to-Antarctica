@@ -824,6 +824,7 @@ button,
 
 .promo__img-wrapper {
   width: 560px;
+  height: 301px;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   background-color: #011c40;
@@ -1419,7 +1420,7 @@ button,
   padding: 0;
   list-style: none;
   margin-right: -28px;
-  width: 146px;
+  width: 144px;
 }
 
 .social__item {
@@ -1469,19 +1470,8 @@ button,
     height: 20px;
   }
 
-  .footer-navigation {
-    min-height: 20px;
-  }
-
-  .social {
-    margin-right: -10px;
-    width: 114px;
-  }
-
-  .social__item {
-    margin-right: 10px;
-    width: 16px;
-    height: 16px;
+  .footer-navigation__item {
+    margin-right: 20px;
   }
 }
 
@@ -1743,6 +1733,10 @@ button,
     margin-top: 3px;
   }
 
+  .footer-navigation {
+    min-height: 20px;
+  }
+
   .footer-navigation__item {
     margin-right: 23px;
   }
@@ -1754,10 +1748,13 @@ button,
 
   .social {
     margin-right: -19px;
+    width: 105px;
   }
 
   .social__item {
-    margin-right: 18px;
+    margin-right: 19px;
+    width: 16px;
+    height: 16px;
   }
 
   .social__item svg {
@@ -1873,6 +1870,7 @@ button,
     padding-bottom: 26px;
     height: 100%;
     background-color: #f9fbfd;
+    overflow: scroll;
   }
 
   .header-navigation__item-js {
@@ -1896,6 +1894,9 @@ button,
   }
 
   .btn-menu__js {
+    position: absolute;
+    top: 20px;
+    right: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1907,7 +1908,7 @@ button,
     align-items: center;
     padding: 0;
     width: 24px;
-    height: 14px;
+    height: 24px;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -1917,8 +1918,6 @@ button,
   .btn-menu__js--opened::before {
     content: "";
     position: absolute;
-    top: 5px;
-    right: 15px;
     width: 24px;
     height: 2px;
     background-color: #f9fbfd;
@@ -1929,8 +1928,6 @@ button,
   .btn-menu__js--closed::before {
     content: "";
     position: absolute;
-    top: 5px;
-    right: 15px;
     width: 16px;
     height: 2px;
     background-color: #011c40;
@@ -1942,8 +1939,6 @@ button,
   .btn-menu__js--closed::after {
     content: "";
     position: absolute;
-    top: 5px;
-    right: 15px;
     width: 16px;
     height: 2px;
     background-color: #011c40;
@@ -2243,6 +2238,10 @@ button,
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
+  }
+
+  .social__item {
+    margin-right: 18px;
   }
 }
 

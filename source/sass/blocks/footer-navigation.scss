@@ -9,7 +9,7 @@
 
   min-height: 38px;
 
-  @media (max-width: $vp-1024) {
+  @media (max-width: $vp-1023) {
     min-height: 20px;
   }
 
@@ -21,6 +21,10 @@
 
 .footer-navigation__item {
   margin-right: 33px;
+
+  @media (max-width: $vp-1024) {
+    margin-right: 20px;
+  }
 
   @media (max-width: $vp-1023) {
     margin-right: 23px;
